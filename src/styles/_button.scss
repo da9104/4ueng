@@ -1,0 +1,112 @@
+.button {
+    cursor: pointer;
+    margin: 0 auto;
+    padding: .9rem 6.0rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: $brandColor;
+    font-family: $sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.94;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px #3fa0a7;
+
+    &:hover {
+        box-shadow: 0 2px #3fa0a7;
+        transform: translateY(1px);
+    }
+
+    &:active {
+        box-shadow: 0 0;
+        transform: translateY(2px);
+    }
+
+}
+
+#btn--pink {
+    cursor: pointer;
+    padding: .9rem 6.9rem;
+    font-family: $sans;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #f1b2dc;
+    border: 0;
+    box-shadow: 0 4px #b981a7;
+
+    &:hover {
+        box-shadow: 0 2px #b981a7;
+        transform: translateY(1px);
+
+    }
+
+    &:active {
+        box-shadow: 0 0;
+        transform: translateY(2px);
+    }
+
+}
+
+#btn--Yellow {
+    cursor: pointer;
+    padding: .9rem 6.9rem;
+    font-family: $sans;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #FBD786;
+    border: 0;
+    box-shadow: 0 4px darken(#FBD786, 10%);
+
+    &:hover {
+        box-shadow: 0 2px darken(#FBD786, 10%);
+        transform: translateY(1px);
+
+    }
+
+    &:active {
+        box-shadow: 0 0;
+        transform: translateY(2px);
+    }
+
+}
+
+
+
+
+
+#button--modal {
+    background: #C6FFDD;
+    color: darken(grey, 20%);
+    font-weight: 900;
+    margin: 5px;
+    cursor: pointer;
+    padding: .9rem 6.0rem;
+    border: 2px solid #C6FFDD;
+    border-radius: 10px;
+    font-family: $sans;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    box-shadow: 0 4px darken(#C6FFDD, 10%);
+
+    &:hover {
+        box-shadow: 0 2px darken(#C6FFDD, 10%);
+        transform: translateY(1px);
+    }
+
+    &:active {
+        box-shadow: 0 0;
+        transform: translateY(2px);
+    }
+
+}

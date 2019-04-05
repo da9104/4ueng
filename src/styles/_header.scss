@@ -1,0 +1,241 @@
+header {
+  background: url('/images/backg.jpg') no-repeat;
+  padding-top: 66.93333333%;
+  background-size: cover;
+  display: flex;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74.8%;
+  z-index: 2;
+}
+
+header h1 {
+  font-family: 'Abril Fatface';
+  position: fixed;
+  top: 3rem;
+  right: 27rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: #fff;
+
+  @keyframes fadein {
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+header h1 span {
+  display: block;
+  font-size: 8.75vw;
+}
+
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2vh;
+  right: 30.2rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  &--small {
+    position: absolute;
+    top: 3rem;
+    right: 36.6rem;
+    background-image: linear-gradient(45deg, #d6caf3 0%, #c2f0fb 100%);
+    justify-content: center;
+    text-align: center;
+    z-index: 6;
+    animation: .9s fadeout 0.5s forwards;
+    opacity: 0;
+
+    @keyframes fadeout {
+      100% {
+        opacity: 1;
+      }
+    }
+
+  }
+
+
+  h2 {
+    color: white;
+    margin-top: 0;
+  }
+
+  p {
+    font-family: $montserrat;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+
+  }
+}
+
+.bottom {
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+}
+
+/* 
+main {
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+*/
+
+
+
+@media only screen and (max-width: 320px) {
+  header {
+    h1 {
+      font-size: .9rem;
+      left: 1rem;
+    }
+
+    .subtitle--small {
+      width: 10vh;
+    }
+
+    .subtitle {
+      display: inline-flex;
+      height: auto;
+
+      .bottom {
+        bottom: 5rem;
+      }
+
+      p {
+
+        font-size: .9rem;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    left: 3rem;
+  }
+
+  .subtitle--small {
+    right: 2rem;
+    width: 20vh;
+  }
+
+  .subtitle {
+    visibility: hidden;
+  }
+}
+
+@media all and (max-width: 560px) {
+
+  header h1 {
+    font-size: 12vw;
+    top: 3rem;
+    right: 11rem;
+  }
+
+  .subtitle--small {
+    top: 3rem;
+    right: 2rem;
+    width: 150px;
+  }
+
+  .subtitle {
+
+    .bottom {
+      p {
+        font-size: 2vh;
+      }
+    }
+  }
+
+  .feature {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  header h1 {
+    font-size: 12vw;
+    top: 3rem;
+    right: 15rem;
+  }
+
+  .subtitle--small {
+    top: 3rem;
+    right: 2rem;
+  }
+
+  .bottom {
+    p {
+      font-size: 2vh;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+  header h1 {
+    font-size: 12vw;
+    top: 3rem;
+    right: 15rem;
+
+  }
+
+  .subtitle--small {
+    top: 3rem;
+    right: 2rem;
+  }
+
+  .subtitle {
+    display: flex;
+    bottom: 51vh;
+    // right: 23.9vw;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  header h1 {
+    font-size: 12vw;
+    top: 3rem;
+    right: 18rem;
+
+  }
+
+  .subtitle--small {
+    top: 3rem;
+    right: 2rem;
+  }
+
+  .subtitle {
+    bottom: 45vh;
+    right: 25.9vw;
+
+  }
+}

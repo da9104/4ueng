@@ -1,0 +1,44 @@
+a {
+    cursor: pointer;
+    color: #292929;
+
+    &:hover {
+        opacity: .6;
+        cursor: pointer;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    color: #292929;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+@font-face {
+    font-family: 'Work Sans, Source Sans Pro, sans-serif';
+    src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans');
+}
+
+
+$montserrat : 'Montserrat';
+$worksans : 'Work Sans';
+$sans: 'Source Sans Pro';
+$brandColor: #27b7c1;
+$fontColor: #292424;
